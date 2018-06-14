@@ -64,6 +64,7 @@ Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
 * **do-what-it-says**
 
 LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+
 ----------------
 Built With
 * Javascript
@@ -71,6 +72,7 @@ Built With
 ----------------
 * Contributing
 Please contact Em at em.karimifar@gmail.com for details on our code of conduct, and the process for submitting pull requests to us.
+
 ----------------
 Authors
 Em Karimifar/
