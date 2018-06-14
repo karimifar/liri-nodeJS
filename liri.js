@@ -25,10 +25,17 @@ if (command === "my-tweets"){
 }
 
 if (command === "spotify-this-song"){
-    var musicName = process.argv[3]
-    for (var i=4; i<process.argv.length; i++){
-        musicName += " " + process.argv[i];
+
+    var musicName;
+    if(!process.argv[3]){
+        musicName = "Golden Brown";
+    }else{
+        musicName = process.argv[3]
+        for (var i=4; i<process.argv.length; i++){
+            musicName += " " + process.argv[i];
+        }
     }
+    
 
     spotify.search({ type: 'track', query: musicName, limit: 1 }, function(err, data) {
         if (err) {
@@ -45,9 +52,15 @@ if (command === "spotify-this-song"){
 }
 
 if (command === "movie-this"){
-    var movieName = process.argv[3]
-    for (var i=4; i<process.argv.length; i++){
-        movieName += " " + process.argv[i];
+    var movieName;
+
+    if(!process.argv[3]){
+        movieName = "Mr Nobody";
+    }else{
+        movieName = process.argv[3]
+        for (var i=4; i<process.argv.length; i++){
+            movieName += " " + process.argv[i];
+        }
     }
 
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
