@@ -26,8 +26,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 
 This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
-----------------
-* spotify-this-song [name of the song here]
+* **spotify-this-song [name of the song here]**
 
 
 Artist: The Beatles
@@ -38,9 +37,8 @@ Preview url: null
 
 Album: 1 (Remastered)
 
-----------------
 
-* node liri.js movie-this [name of the movie here]
+* **movie-this [name of the movie here]**
 
 If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 This will output the following information to your terminal/bash window:
@@ -62,23 +60,17 @@ Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn thin
 
 Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
 
-----------------
 
-* do-what-it-says
+* **do-what-it-says**
 
 LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
-
-
 ----------------
-
 Built With
 * Javascript
 * twitter, node-spotify-api, request, DotEnv and colors packages
-
 ----------------
 * Contributing
 Please contact Em at em.karimifar@gmail.com for details on our code of conduct, and the process for submitting pull requests to us.
-
 ----------------
 Authors
 Em Karimifar/
